@@ -1,0 +1,19 @@
+<div class="container text-center">
+
+  <h1>Here are our cities</h1>
+
+
+
+
+<div class="row">
+    <% %w(berlin paris zurich cali).each do |city| %>
+  <div class="col-xs-12 col-sm-4">
+    <div class="card" style="background-image: url(https://kitt.lewagon.com/placeholder/cities/paris);">
+      <h3><%= city.capitalize %></h3>
+      <p>Adress 26</p>
+    </div>
+  </div>
+</div>
+    <% end %>
+
+</div>

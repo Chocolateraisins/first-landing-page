@@ -1,15 +1,10 @@
----
-title: Le Wagon - Middleman
----
+<div class="container text-center">
+  <h1>Today is <%= Date.today.strftime("%A, %b %d") %></h1>
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
-  </div>
+  <ul class="list-unstyled">
+    <% %w(Landing_page Details_on_Korea Althoernli).each do |item| %>
+    <li>I need to look into <%= item %></li>
+    <% end %>
+  </ul>
+
 </div>
